@@ -1,0 +1,9 @@
+// Enable extra breakpoint for columns
+.wp-block-columns.mbpc-collapse-tablet {
+  @media(max-width: 1000px){
+    flex-wrap: wrap !important;
+    & > .wp-block-column {
+      flex-basis: 100% !important;
+    }
+  }
+}

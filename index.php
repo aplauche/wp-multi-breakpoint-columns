@@ -45,6 +45,7 @@ class MultiBreakpointColumns
 
   public function addEditorAssets()
   {
+    wp_enqueue_style('mbpc-editor-css', $this->baseUrl . 'build/css/style-style.css', $this->cssAssetInfo['dependencies'], $this->cssAssetInfo['version']);
     wp_enqueue_script('mbpc-editor-js', $this->baseUrl . 'build/js/editor.js', $this->jsAssetInfo['dependencies'], $this->jsAssetInfo['version']);
   }
 

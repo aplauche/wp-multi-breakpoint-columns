@@ -8,8 +8,8 @@ const path = require( 'path' );
 module.exports = {
   ...defaultConfig,
   entry: {
-    "js/editor": path.resolve( process.cwd(), "/src/js",  "editor.js"),
-    "css/style": path.resolve( process.cwd(), "/src/css",  "style.scss")
+    "js/editor": path.resolve( __dirname, "src/js",  "editor.js"),
+    "css/style": path.resolve( __dirname, "src/css",  "style.scss")
   },
   plugins: [
     // Include WP's plugin config.
